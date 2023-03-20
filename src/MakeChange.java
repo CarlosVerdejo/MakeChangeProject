@@ -36,7 +36,6 @@ public class MakeChange {
 		
 	sc.close();			
 	
-	
 	}
 
 	
@@ -89,7 +88,6 @@ public static void change(double total) {
 		dime = total / 0.10;
 		System.out.print((int)dime + " dime, ");
 		nTotal = total - ((int)dime * 0.10);
-		System.out.println(nTotal);
 		if (nTotal >= 0.05) {
 			nickel = nTotal / 0.05;
 			System.out.print((int)nickel + " nickel, ");
@@ -128,21 +126,29 @@ public static void bills(double total) {
 		ten = total / 10;
 		System.out.print((int)ten + " ten dollar bill, ");
 		total = total - ((int)ten * 10);;
-		if (total >= 5.00) {
+		if (total >= 5) {
 			five = total / 5;
 			System.out.print((int)five + " five dollar bill, ");
 			total = total - ((int)five * 5);
-			if (total >= 1);{
+			if (total >= 1) {
 			one = total / 1;
 			System.out.print((int)one + " one dollar bill, ");
 			total = total - (one * 1);
 			}
+		}
+		else if (total >= 1) {
+			one = total / 1;
+			System.out.print((int)one + " one dollar bill, ");
+			total = total - (one * 1);
 		}	
-	else if (total >= 5.00) {
+	}
+	
+	else if (total >= 5) {
+		System.out.println("TEST");
 		five = total / 5;
 		System.out.print((int)five + " five dollar bill, ");
 		total = total - ((int)five * 5);
-		if (total >= 1);{
+		if (total >= 1) {
 		one = total / 1;
 		System.out.print((int)one + " one dollar bill, ");
 		total = total - (one * 1);
@@ -155,7 +161,7 @@ public static void bills(double total) {
 		total = total - (one * 1);
 		}
 	
-	}
+}
 }
 	
 
@@ -163,7 +169,7 @@ public static void bills(double total) {
 
 
 
-}
+
 
 
 
