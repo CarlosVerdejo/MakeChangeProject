@@ -144,7 +144,6 @@ public static void bills(double total) {
 	}
 	
 	else if (total >= 5) {
-		System.out.println("TEST");
 		five = total / 5;
 		System.out.print((int)five + " five dollar bill, ");
 		total = total - ((int)five * 5);
